@@ -9,7 +9,7 @@ public class App {
         Javalin app = Javalin.create(config -> config.enableCorsForAllOrigins());
 
         app.get("/hola",context -> {
-            context.result("Hola this many requests have been handled by the server version 3.2 now with a webhook that WORKS!!! " + ++App.counter);
+            context.result("Hola this many requests have been handled by the server version 4.0 now with a webhook that WORKS!!! " + ++App.counter);
         });
 
         app.start();
